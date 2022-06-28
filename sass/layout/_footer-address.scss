@@ -9,7 +9,7 @@
     padding-bottom: 60px;
 }
 
-.footer-logo {
+.footer-logo_theme_daek {
 font-family: 'Raleway', sans-serif;
 font-weight: 700;
 font-size: 26px;
@@ -31,7 +31,7 @@ color: var(--text-accent);
 
 }
 
-.address-footer-link {
+.address-list__address-footer-link {
 font-style: normal;
 font-size: 14px;
 line-height: 1.71;
@@ -39,7 +39,7 @@ letter-spacing: 0.03em;
 color: var(--text-accent);
 
 }
-.footer-contact:not(:last-child){
+.address-list__footer-contact:not(:last-child){
     margin-bottom: 9px;
 }
 .footer-item-contact:hover, 

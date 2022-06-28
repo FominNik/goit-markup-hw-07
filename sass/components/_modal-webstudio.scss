@@ -45,11 +45,13 @@
         top: 8px;
         right: 8px;
         transform: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+        fill: var(--accent-color);
+        }
     }
-    .close-button:hover,
-    .close-button:focus {
-    fill: var(--accent-color);
-    }
+  
     .modal-text {
         font-weight: 700;
         font-size: 20px;
@@ -125,17 +127,20 @@
         resize: none;
         padding: 12px 16px;
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:focus {
+            outline: none;
+            border-color: var(--accent-color);
+        }
+        &::placeholder {
+            text-transform: capitalize; 
+            color: rgba(117, 117, 117, 0.5);
+        }
     }
     
-    .contact-form-message:focus {
-        outline: none;
-        border-color: var(--accent-color);
-    }
+   
     
-    .contact-form-message::placeholder {
-        text-transform: capitalize; 
-        color: rgba(117, 117, 117, 0.5);
-    }
+   
     
     .contact-form-checkbox-label::before {
         display: block;
@@ -214,10 +219,11 @@
        
         
         transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+        
+        &:hover,
+        &:focus {
+            background: var(--header-botom-color);
+        }
     }
     
-    .contact-form-button:hover,
-    .contact-form-button:focus {
-        background: var(--header-botom-color);
-    }
+    

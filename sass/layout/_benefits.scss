@@ -12,11 +12,13 @@
 
 .item {
     flex-basis: calc((100% - 90px) / 4);
+
+    &:not(:nth-child(4n)) {
+        margin-right: 30px;
+    }
+    
 }
 
-.item:not(:nth-child(4n)) {
-    margin-right: 30px;
-}
 
 .sub-item {
     font-weight: 700;

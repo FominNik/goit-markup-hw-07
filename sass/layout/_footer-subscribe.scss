@@ -3,7 +3,7 @@
     margin-left: 93px;
 }
 
-.subscribe-text {
+.subscribe-section__subscribe-text {
     display: block;
     font-weight: 700;
     font-size: 14px;
@@ -15,7 +15,7 @@
     color: var(--text-accent);
 }
 
-.subscribe-form-input {
+.subscribe-section__subscribe-form-input {
     box-sizing: border-box;
     width: 358px;
     height: 50px;
@@ -27,12 +27,12 @@
     margin-right: 12px;
     padding-left: 16px;
 }
-.subscribe-email-input{
+.subscribe-section__subscribe-email-input{
     display: flex;
     
 }
 
-.subscribe-form-button {
+.subscribe-section__subscribe-form-button {
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
@@ -49,13 +49,15 @@
     cursor: pointer;
     transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
     border: transparent;
+
+    &:hover,
+    &:focus {
+    background-color:var(--header-botom-color) ;
 }
-.subscribe-telegram-icon {
+}
+
+.subscribe-section__subscribe-telegram-icon {
 margin-left: 10px;
 }
 
 
-.subscribe-form-button:hover,
-.subscribe-form-button:focus {
-background-color:var(--header-botom-color) ;
-}
