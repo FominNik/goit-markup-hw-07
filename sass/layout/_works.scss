@@ -1,26 +1,26 @@
-.what-are-we-doing-section {
+.section_no-padding-top {
     padding-top: 0;
    }
    
 
 
-.work {
+.works {
     display: flex;
     flex-wrap: wrap;
 }
 
-.work-picture:not(:nth-child(3n)) {
+.works__picture:not(:nth-child(3n)) {
     margin-right: 30px;
 }
-.work-picture {
+.works__picture {
     flex-basis: calc((100% - 90px)/3);
     
 }
- .text-card {
+ .works__box {
     position: relative;
 }
 
- .what-are-we-doing-card-text {
+ .works__description {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,3 +38,12 @@
     left: 0;
     overflow: auto;
  }
+ .section__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--text-font);
+    margin-bottom: 50px;
+    }

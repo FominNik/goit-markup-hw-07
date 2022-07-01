@@ -1,6 +1,4 @@
 
-/*<!--GEOMETRY HEADER-->*/
-
 
 .header{
     border-bottom: 1px solid var(--border-studio);
@@ -8,7 +6,7 @@
 
 
 
-.page-header-container {
+.header__container {
     display: flex;
     align-items: center;
 }
@@ -31,7 +29,7 @@ align-items: center;
 
 
 
-.nav-menu__nav-link:not(:last-child) {
+.nav-menu__item:not(:last-child) {
     margin-right: 50px;
 
 }
@@ -42,7 +40,7 @@ align-items: center;
 }
 
 
-.nav-menu__menu-link {
+.nav-menu__link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -60,7 +58,7 @@ align-items: center;
 }
 
 
-.nav-menu__menu-link.nav-menu__nav-link__current::after { 
+.nav-menu__link.nav-menu__link_current::after { 
 content: "";
 display: block;
 width: 100%;
@@ -72,12 +70,12 @@ left: 0;
 bottom: -1px;
 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
-.menu-link.current {
+.nav-menu__link.current {
     color: var(--accent-color);
 }
 
 
-.nav-menu__menu-link {
+.nav-menu__link {
 padding: 32px 0;    
 font-weight: 500;
 font-size: 14px;
@@ -87,7 +85,7 @@ color: var(--text-font);
 display: block;
 }
 
-.mail-link {
+.сontact-info__link {
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
@@ -97,7 +95,7 @@ transition: color var(--accent-color) 1000ms cubic-bezier(0.4, 0, 0.2, 1) ;
 
 }
 
-.phone-number-link {
+.сontact-info__link {
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
@@ -112,7 +110,7 @@ transition: color var(--accent-color) 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
 
-.сontact-info__icon-contact {
+.сontact-info__icon {
     margin-right: 10px;
     fill: var(--color-contact);
 
@@ -121,18 +119,18 @@ transition: color var(--accent-color) 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
     fill: var(--accent-color);
     }
 
-    .сontact-info__сontact-link:hover &,
-    .сontact-info__сontact-link:focus & {
+    .сontact-info__link:hover &,
+    .сontact-info__link:focus & {
         fill: var(--accent-color);
 
     }
     
     }
     
-    .contact-items:not(:last-child){
+    .сontact-info__item:not(:last-child){
         margin-right: 50px;
     }
-    .сontact-info__сontact-link{
+    .сontact-info__link{
         align-items: center;
         display: flex;
         padding-top: 25px;
@@ -141,6 +139,6 @@ transition: color var(--accent-color) 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
         &:hover, 
         &:focus {
         color: var(--accent-color);
-}
+    }
     }
     
